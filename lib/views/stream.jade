@@ -1,0 +1,8 @@
+html
+	head 
+		title!= streamName
+		link(href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet")
+		script(src="http://vjs.zencdn.net/4.11/video.js")
+	body 
+		video(class='video-js vjs-default-skin' height='100%' width='100%' controls preload='auto' data-setup='{}')
+			source(src='rtmp://eamon.ninja/live/' + streamName type='rtmp/mp4')

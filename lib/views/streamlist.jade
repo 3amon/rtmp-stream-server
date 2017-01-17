@@ -1,0 +1,10 @@
+html
+	head
+		title!= title
+	body
+		ul
+			for name in streamNames
+				li
+					a(href='http://eamon.ninja/streams/' + name)!=name
+			else
+				li No streams
